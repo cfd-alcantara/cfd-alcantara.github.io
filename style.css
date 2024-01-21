@@ -74,10 +74,17 @@ a:hover {
   width: 5rem;
 }
 
+#desktop-nav {
+  border-bottom: black solid;
+  /* border-style: dotted; */
+  /* overflow:hidden;border-top:solid;border-bottom:solid; */
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
   display: none;
+  border-bottom: black solid;
 }
 
 .hamburger-menu {
@@ -98,7 +105,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.5 ease-in-out;
 }
 
 .menu-links {
@@ -109,7 +116,9 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 1;
 }
 
 .menu-links a {
@@ -128,6 +137,7 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  opacity: 1;
 }
 
 .hamburger-icon.open span:first-child {
@@ -140,6 +150,10 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span {
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .hamburger-icon span:first-child {
@@ -162,6 +176,10 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
 }
 
 .section-container {
@@ -175,6 +193,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  border-bottom: black solid;
 }
 
 .section__pic-container {
@@ -255,16 +274,6 @@ section {
   animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
 }
 
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.4;
-  }
-}
-
 .btn-color-1,
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -301,6 +310,7 @@ section {
 
 #about {
   position: relative;
+  border-bottom: black solid;
 }
 
 .about-containers {
@@ -350,6 +360,7 @@ section {
 
 #experience {
   position: relative;
+  border-bottom: black solid;
 }
 
 .experience-sub-title {
@@ -389,6 +400,7 @@ article .icon {
 
 #projects {
   position: relative;
+  border-bottom: black solid;
 }
 
 .color-container {
@@ -419,6 +431,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  border-bottom: black solid;
 }
 
 .contact-info-upper-container {
@@ -462,4 +475,26 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+/* KEYFRAME SECTION */
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

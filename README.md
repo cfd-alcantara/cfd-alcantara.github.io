@@ -1,10 +1,10 @@
 <h1 align="center">Hi this is my README for the Learning Task 1: Personal Website</h1>
 
 <h3 align="center">Criteria 1: Applications of Concepts Taught</h3>
-<p>For this criteria I started with the HTML tags first then created the whole HTML structure before doing any of the designs in the CSS or JS. I used various CSS selectors and one of the most used selector in my code is the class selector. For the animations I just stick with the basic animations like a pulse of the picture.</p>
+<p>For this criteria I started with the HTML tags first then created the whole HTML structure before doing any of the designs in the CSS or JS. I used various CSS selectors and one of the most used selector in my code is the class selector. For the animations I just stick with the basic animations like a pulse of the picture. I also added an animation for the hamburger menu and a scrolling animation to make it more appealing</p>
 
 <h3 align="center">Criteria 2 and 4: Design and Creativity</h3> 
-<p>For the design it is mostly like the recommended youtube video because I liked it style. I am a person who likes minimal designs and does not go overboard on designs mainly because I just prefer minimal designs. Although it took me a lot of time experimenting on the flexbox because the items are going to weird places and not actually going to the place I want it to be displayed</p>
+<p>For the design it is mostly like the recommended youtube video because I liked it style. I am a person who likes minimal designs and does not go overboard on designs mainly because I just prefer minimal designs. Although it took me a lot of time experimenting on the flexbox because the items are going to weird places and not actually going to the place I want it to be displayed. And I also added a small GIF from a game I liked as a kid</p>
 
 <h3 align="center">Criteria 3: Content</h3>
 <p>For the content it is composed of my personal detail such as my name, skills, interests, projects, and achievements. For the projects I used my OBE from my subject from before which is the 4 pics 1 word. And I also added my resume the one I made for my english class.</p>
